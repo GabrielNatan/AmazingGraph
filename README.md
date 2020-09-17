@@ -10,9 +10,7 @@
     Landing page to create amazing graphics
        <br />
     <br />
-    <a href="https://github.com/Lorenalgm/AmazingGraph">Challenge</a>
-    ·
-    <a href="https://www.linkedin.com/in/lorenagmontes/">Contact</a>
+    
   </p>
 </p>
 
@@ -30,6 +28,5 @@
 # Techs: 
 HTML<br>
 CSS
-br>
 
 Designed and created by  <a href="https://github.com/Lorenalgm">Lorena</a> :)

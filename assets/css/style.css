@@ -1,0 +1,180 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+/*#766F68;#D2872C;*/
+.container{
+	width: 90%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+img{
+	width: 60%;
+}
+
+main{
+	width: 100%;
+	height: 100vh;
+	max-height: 700px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+header{
+	width: 100%;
+	height: 20%;
+}
+i#menu{
+	color: #222;
+	display: none;
+	}
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo{
+	padding: 10px 0;
+}
+.logo a{
+	color: #D2872C;
+}
+nav ul{
+	display: flex;
+	width: 300px;
+	justify-content: space-between;
+}
+
+nav ul li a{
+	color: #766F68;
+	font-size: 1.3rem; 
+	padding: 10px;
+}
+
+section{
+	width: 100%;
+	height: 80%;
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+}
+
+.left{
+	position: absolute;
+	left: 80px;
+	z-index: 100;
+	width: 40%;	
+}
+
+.left h1{
+	font-size: 3.4rem;
+	color: #766F68;
+}
+
+.left p{
+	font-size: 1.2em;
+	margin: 20px 0;
+	color:  #766F68;
+}
+section img{
+	height: auto;
+	max-height: 350px;
+	margin-top: 10px;
+}
+
+section button{
+	color:  #FFF;
+	padding: 20px 60px;
+	border:  none;
+	border-radius: 15px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	background-color: #D2872C;
+	cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1070px) {
+  .left{
+  	left: 50px;
+  }
+
+  .left h1{
+  	width: 500px;
+  }
+
+  section img{
+  	width: 70%;
+  }
+  
+}
+
+@media only screen and (max-width: 800px) {
+  .left{
+  	left: 0px;
+  }
+
+  .left h1{
+  	font-size: 3.2rem;
+  }
+  
+  section button{
+  	font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+
+	section {
+		flex-direction: column; 
+	}
+	i#menu{
+		display: block;
+		font-size: 1.3rem;
+	}
+	nav ul{
+		display: none;
+	}
+	header{
+		height: 60px;
+	}
+
+  .left{
+  	width: 100%;
+  	position: relative;
+  	top: 0;
+  	left: 0;
+  	margin: 0;
+  	align-items: center;
+  	justify-content: center;
+  	text-align: center;
+  	order: 2;
+  }
+
+  .left h1{
+  	font-size: 2.2rem;
+  	width: 100%;
+  }
+  section{
+  	margin: 0;
+  	width: 100%;
+  	height: calc(100% - 60px);
+  	justify-content: flex-start;
+  }
+  section img{
+  	width: 100%;
+  	order: 1;
+  }
+  
+  section button{
+  	font-size: 1rem;
+  }
+}
